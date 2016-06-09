@@ -59,18 +59,18 @@
             somePhone.AddCall(new Call(new DateTime(2005, 12, 24), "0888555555", 20));
             somePhone.AddCall(new Call(new DateTime(2005, 12, 24), "0888666666", 40));
 
-            somePhone.ShowCallHistory();
+            Console.WriteLine(somePhone.ShowCallHistory());
             Console.WriteLine(somePhone.CallsPrice(0.37));
             Console.WriteLine();
 
             somePhone.RemoveCall(5);
 
-            somePhone.ShowCallHistory();
+            Console.WriteLine(somePhone.ShowCallHistory());
             Console.WriteLine(somePhone.CallsPrice(0.37));
             Console.WriteLine();
 
             somePhone.ClearCallHistory();
-            somePhone.ShowCallHistory();
+            Console.WriteLine(somePhone.ShowCallHistory());
         }
     }
 }

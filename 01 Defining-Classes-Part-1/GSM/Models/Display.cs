@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Display
+    public class Display
     {
         private double? size;
         private int? colors;

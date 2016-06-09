@@ -2,14 +2,14 @@
 {
     using System;
 
-    enum BatteryType
+    public enum BatteryType
     {
         LiIon,
         NiMH,
         NiCd
     }
 
-    class Battery
+    public class Battery
     {
         private string model;
         private double hoursIdle;

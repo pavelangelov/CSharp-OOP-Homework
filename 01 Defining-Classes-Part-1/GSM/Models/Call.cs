@@ -2,7 +2,7 @@
 {
     using System;
 
-    class Call
+    public class Call
     {
         private DateTime date;
         private string time;

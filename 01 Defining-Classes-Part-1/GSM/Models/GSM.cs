@@ -2,8 +2,9 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.Text;
 
-    class GSM
+    public class GSM
     {
         private static  GSM iphone4S = new GSM("iPhone4S", "Apple", 1000, "Steve Jobs", new Battery("A200", 500, 13, BatteryType.LiIon), new Display());
         private string model;
@@ -179,14 +180,18 @@
             this.callHistory.Clear();
         }
 
-        public void ShowCallHistory()
+        public string ShowCallHistory()
         {
-            Console.WriteLine("Number of calls: {0}", this.CallHistory.Count);
+            StringBuilder calls = new StringBuilder();
+
+            calls.AppendLine($"Number of calls: {this.CallHistory.Count}");
 
             for (int i = 0; i < this.CallHistory.Count; i++)
             {
-                Console.WriteLine("{0}. {1}", i + 1, this.CallHistory[i]);
+                calls.AppendLine($"{i + 1}. {this.CallHistory[i]}");
             }
+
+            return calls.ToString();
         }
 
         public string CallsPrice(double pricePerMinute)
