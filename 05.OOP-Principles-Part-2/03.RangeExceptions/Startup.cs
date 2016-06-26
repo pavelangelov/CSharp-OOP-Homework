@@ -48,7 +48,7 @@
             };
 
             Console.ForegroundColor = ConsoleColor.DarkGreen;
-            Console.WriteLine("\n------------------------------ Integer Range Exception ------------------------------\n");
+            Console.WriteLine("\n------------------------------ DateTime Range Exception ------------------------------\n");
             Console.ForegroundColor = ConsoleColor.Red;
             foreach (var date in datesToAdd)
             {
